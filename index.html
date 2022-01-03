@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../JQuery CSS & Bootstrap file/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrap</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <a class="navbar-brand" href="#"><img class="logostyle" src="images/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Sign-Up.html" class="nav-link">Sign up<span class="sr-only">(current)</span></a>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <li class="nav-item dropdown list-unstyled">
+                        <a href="#" class="nav-link dropdown-toggle text-secondary" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a href="#" class="dropdown-item">Action</a>
+                            <a href="#" class="dropdown-item">Another Action</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">Something else here</a>
+                        </div>
+                    </li>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link"><i class="fa fa-shopping-cart"></i><span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link"><i class="fa fa-search"></i> <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </form>
+            </div>
+        </nav>
+
+    </header>
+    <section>
+        <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+                <li data-target="#demo" data-slide-to="5"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/home-bg.jpg" class="d-block w-100" height="500">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/g-img-1.jpg" class="d-block w-100" height="500">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/g-img-2.jpg" class="d-block w-100" height="500">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/g-img-3.jpg" class="d-block w-100" height="500">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/g-img-4.jpg" class="d-block w-100" height="500">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/g-img-5.jpg" class="d-block w-100" height="500">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+
+
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row my-5 text-center">
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/g-img-1.jpg" class="card-img-top" alt="…">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card’s content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/g-img-2.jpg" class="card-img-top" alt="…">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card’s content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/g-img-3.jpg" class="card-img-top" alt="…">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card’s content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container my-5">
+            <h1 class="text-center my-5">About</h1>
+            <div class="row">
+                <div class="col-6 text-center">
+                    <img src="images/g-img-5.jpg" alt="…" width="400" height="250">
+                </div>
+                <div class="col-6 text-center d-flex align-items-center">
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus quis dolorem vel, saepe
+                        laboriosam? Nesciunt enim quae quod in veniam, accusantium, ipsum nobis dolorem consectetur ea
+                        cupiditate error expedita.Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus quis dolorem vel, saepe
+                        laboriosam? Nesciunt enim quae quod in veniam, accusantium, ipsum nobis dolorem consectetur ea
+                        cupiditate error expedita.Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus quis dolorem vel, saepe
+                        laboriosam? Nesciunt enim quae quod in veniam, accusantium, ipsum nobis dolorem consectetur ea
+                        cupiditate error expedita.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1 class="text-center my-5">Reviews</h1>
+        <div class="container-fluid">
+            <div class="row text-center mx-auto">
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/g-img-3.jpg" class="card-img-top" alt="…">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card’s content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/g-img-3.jpg" class="card-img-top" alt="…">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card’s content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/g-img-3.jpg" class="card-img-top" alt="…">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card’s content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/g-img-3.jpg" class="card-img-top" alt="…">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card’s content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section>
+        <div class="row">
+            <div class="col-6 bg-danger image">
+                <img src="images/15-03-44-5555.jpg" alt="image">
+            </div>
+            <div class="col-6 bg-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe unde consectetur
+                vel, dolore molestiae accusantium aspernatur totam officiis animi rem corrupti tempora quam quos cumque
+                atque, praesentium odit at assumenda!</div>
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <div class="col-4 bg-success">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore totam dolorem
+                culpa quisquam enim veniam impedit ut reprehenderit ducimus dignissimos beatae architecto facilis
+                minima, ipsum vel officia ipsam cum eum?</div>
+            <div class="col-4 bg-warning">o</div>
+            <div class="col-4 bg-success">o</div>
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <div class="col-3 bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore incidunt at
+                esse rem dignissimos ipsa voluptatum magni tenetur odio repellat! Voluptatibus ea rerum ipsa, iste
+                aperiam modi repellat rem accusamus?</div>
+            <div class="col-3 bg-danger">o</div>
+            <div class="col-3 bg-success">o</div>
+            <div class="col-3 bg-warning">o</div>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col-2 bg-danger">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque aut
+                perspiciatis eum ullam officiis, voluptates ipsam alias sint animi. Tenetur, eum suscipit! Atque aliquam
+                quaerat debitis eveniet nemo, voluptatem voluptate.</div>
+            <div class="col-2 bg-warning">o</div>
+            <div class="col-2 bg-success">o</div>
+            <div class="col-2 bg-info">t</div>
+            <div class="col-2 bg-dark">t</div>
+            <div class="col-2 bg-info">t</div>
+        </div>
+    </footer> -->
+    <footer class="footer-section" id="footerdiv">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 text-center footer-div">
+                    <div>
+                        <h3>About Thapa Technical</h3>
+                        <p>The world has become so fast paced that people don't want to stand by reading a page of information to bo they would much rather look at a presentation and understand the massage.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-center footer-div">
+                    <div>
+                        <h3>Navigation links</h3>
+                        <li><a href="#topheader">Home</a></li>
+                        <li><a href="#Servicediv">Services</a></li>
+                        <li><a href="#pricingdiv">Price</a></li>
+                        <li><a href="#footerdiv">About</a></li>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12 text-center footer-div">
+                    <div>
+                        <h3>Newsletter</h3>
+                        <p>For bussiness professionals cought betwween high OEM price and mediocre print and graphic output.</p>
+                            <div class="container newsletter-main">
+                            <div class="row">
+                                <div class="col-lg-12 col-12">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control news-input" placeholder="Your Email">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">
+                                                Subscribe
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 text-center">
+                <p>Copyright  &copy; 2022 All rights reserved | This templete is made with love by Deepanshu</p>
+            </div>
+            <div class="scrolltop float-right">
+                <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="../../JQuery CSS & Bootstrap file/jquery-3.4.1.min.js"></script>
+    <script src="../../JQuery CSS & Bootstrap file/New folder/popper.min.js"></script>
+    <script src="../../JQuery CSS & Bootstrap file/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

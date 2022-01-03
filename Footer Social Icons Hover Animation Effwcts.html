@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Social Icons Hover Animation Effects</title>
+	<link rel="stylesheet" href="F:\nag bhai\d\java programs\JQuery CSS & Bootstrap file\fontawesome-free-5.10.2-web\css\all.min.css">
+	<style>
+		*{margin: 0; padding: 0}
+		.centerdiv{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		a{
+			height: 100px;
+			width: 100px;
+			background-color: #f5f6fa;
+			margin: 10px; text-align: center;
+			border-radius: 50px;
+			box-shadow: 1px  4px 2px 2px #dcdde1;
+			line-height: 110px;
+			position: relative;
+			overflow: hidden;
+		}
+		.fa-instagram{color: #e84393;}
+		.fa-youtube{color: #c4302b;}
+		.fa-linkedin-in{color: #0097e6;}
+		.fa-twitter{color: #00acee;}
+		.fa-facebook-f{color: #3b5998;}
+		a i{transition: all .3s linear;}
+		a:hover .fab{
+			transform: scale(1.5);
+			color: #f5f6fa;
+		 }
+		 a:before{
+		 	content: "";
+		 	height: 120%; width: 120%;
+		 	position: absolute;
+		 	top: 90%;
+		 	left: -50%;
+		 	background-color: #00a8ff;
+		 	transform: rotate(60deg);
+		 }
+		 a:hover:before{
+		 	animation: socialicons 0.8s 1;
+		 	animation-fill-mode: forwards;
+		 }
+		 @keyframes socialicons{
+		 	0%{top: 90%; left: -50%;}
+		 	50%{top: -60%; left: -10%;}
+		 	100%{top: -10%; left: -10%;}
+		 }
+	</style>
+</head>
+<body>
+	<div class="centerdiv">
+		<a href="#" target="_blank"><i class="fab fa-2x fa-facebook-f"></i></a>
+		<a href="#" target="_blank"><i class="fab fa-2x fa-twitter"></i></a>
+		<a href="#" target="_blank"><i class="fab fa-2x fa-instagram "></i></a>
+		<a href="#" target="_blank"><i class="fab fa-2x fa-youtube "></i></a>
+		<a href="#" target="_blank"><i class="fab fa-2x fa-linkedin-in "></i></a>
+	</div>
+</body>
+</html>

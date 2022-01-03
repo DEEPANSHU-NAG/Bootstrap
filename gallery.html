@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image Gallery</title>
+	<link rel="stylesheet" type="text/css" href="Magnific-Popup-master\dist\magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="F:\nag bhai\d\java programs\JQuery CSS & Bootstrap file\bootstrap-4.3.1-dist\css\bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="py-0">
+			<h1 class="text-center display-3">MY GALLERY</h1>
+			<hr class="text-center w-25 border-dark">
+		</div>
+		<div class="row no-gutters gallerys">
+			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+				<a href="images/g-img-6.jpg" target="_blank">
+					<img src="images/g-img-6.jpg" class="img-fluid" width="800" height="600">
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+				<a href="images/g-img-1.jpg" target="_blank">
+					<img src="images/g-img-1.jpg" class="img-fluid" width="800" height="600">
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+				<a href="images/g-img-2.jpg" target="_blank">
+					<img src="images/g-img-2.jpg" class="img-fluid" width="800" height="600">
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+				<a href="images/g-img-3.jpg" target="_blank">
+					<img src="images/g-img-3.jpg" class="img-fluid" width="800" height="600">
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+				<a href="images/g-img-4.jpg" target="_blank">
+					<img src="images/g-img-4.jpg" class="img-fluid" width="800" height="600">
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+				<a href="images/g-img-5.jpg" target="_blank">
+					<img src="images/g-img-5.jpg" class="img-fluid" width="800" height="600">
+				</a>
+			</div>
+		</div>
+	</div>
+	<script src="F:\nag bhai\d\java programs\JQuery CSS & Bootstrap file\jquery-3.4.0.min.js"></script>
+	<script src="F:\nag bhai\d\java programs\JQuery CSS & Bootstrap file\bootstrap-4.3.1-dist\js\bootstrap.bundle.min.js"></script>
+	<script src="F:\nag bhai\d\java programs\JQuery CSS & Bootstrap file\bootstrap-4.3.1-dist\js\bootstrap.min.js"></script>
+	<script src="F:\nag bhai\d\java programs\JQuery CSS & Bootstrap file\Magnific-Popup-master\dist\jquery.magnific-popup.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.gallerys').magnificPopup({
+				type:'image',
+				delegate: 'a',
+				gallery:{
+					enabled: true
+				}
+			});
+		});
+	</script>
+</body>
+</html>

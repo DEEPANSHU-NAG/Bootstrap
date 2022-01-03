@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arial,Flamenco;
+}
+@font-face{
+				font-family: Flamenco;
+				src: url('../font/Flamenco-Regular.ttf');
+			}
+header{
+	width: 100%;
+	height: 100vh;
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../images/home-bg.jpg');
+	background-size: 100% 100%;
+	position: relative;
+}
+.mainclass{
+	width: 1000px;
+	height: 500px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+}
+.leftform{
+	width: 35%;
+	height: 500px;
+	background-image: url('../images/g-img-2.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: .5;
+}
+.rightform{
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 65%;
+	height: 500px;
+	padding: 30px 120px;
+	color :  #000;
+}
+.rightform h2{
+	font-size: 50px;
+	color: #000;
+	display: block;
+}
+.rightform form label{
+	font-size: 16px;
+	display: block;
+	margin-top: 25px;
+}
+.rightform form input[type='text'] , input[type='password']{
+	width: 100%;
+	border: none;
+	padding: 10px 10px;
+	border-radius: 20px;
+	background-color: transparent;
+	border-bottom: 2px solid #555;
+	font-size: 16px;
+	margin-top: 5px;
+	color: #ddd;
+}
+.rightform form input[type='text'] , input[type='password'] :hover{
+	background-color: transparent;
+}
+.submittext{
+	width: 100%;
+	margin-top: 20px;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #fff;
+	padding: 10px 0px;
+	border-width: 0px;
+	font-size: 15px;
+	transition: .2s;
+}
+.belowsec{
+	margin-top: 20px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 1.5;
+}
+button{
+	width: 100px;
+	padding: 10px;
+	color: white;
+	border: none;
+	border-radius: 20px;
+
+}
+button:hover{
+	color: yellow;
+	cursor: pointer;
+}
+.submittext:hover{
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+#fb{
+	background-color: #3b5998;
+	margin-top: 10px;
+}
+#gogle{
+	background-color: #db4437;
+	margin-top: 10px;
+}
+form label i{
+	color: #405de6;
+	margin-right: 10px;
+}
+.far, #eye{
+	position: absolute;
+	left: 84%;
+	top: 64%;
+	font-size: 25px;
+	cursor: pointer;
+}
+.far:hover,#eye:hover{color: #ffff00;}
+#eye{top: 46%;}

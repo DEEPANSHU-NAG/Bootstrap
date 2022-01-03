@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/Sign-up style.css">
+	<link rel="stylesheet" type="text/css" href="F:\nag bhai\d\java programs\JQuery CSS & Bootstrap file\fontawesome-free-5.8.2-web\css\all.min.css">
+</head>
+<body>
+	<header>
+		<div class="mainclass">
+			<div class="leftform"></div>
+			<div class="rightform">
+				<h2>Sign up</h2>
+				<form>
+					<label><i class="fas fa-user"></i> User Name</label>
+					<input type="text" name="Username" placeholder="User Name">
+					<label><i class="fas fa-lock"></i> Password</label>
+					<i class="far fa-eye-slash" id="eye"></i>
+					<input type="password" id="pwd" name="Password" placeholder="Enter passwoed">
+					<label><i class="fas fa-lock"></i> Confirm Password</label>
+					<i class="far fa-eye-slash" id="eye2"></i>
+					<input type="password" id="pwd2" name="ConfirmPassword" placeholder="Re Enter passwoed">
+					<input type="Submit" name="Submit" value="Submit" class="submittext">
+				</form>
+				<div class="belowsec">
+				<h3>Sign In With</h3>
+				<button id="fb"><i class="fab fa-facebook-f"> Facebook</i></button>
+				<button id="gogle"><i class="fab fa-google-plus-g"> Google+</i></button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<script src="F:\nag bhai\d\java programs\JQuery CSS & Bootstrap file\jquery-3.4.1.min.js"></script>
+	<script>
+		var pwd = document.getElementById('pwd');
+		var pwd2 = document.getElementById('pwd2');
+		var m = $("#eye");
+		m.on('click',function(){
+			if(m.hasClass('far fa-eye-slash')){
+				m
+				.removeClass('far fa-eye-slash')
+				.addClass('far fa-eye');
+			}else{
+				m
+				.removeClass('far fa-eye')
+				.addClass('far fa-eye-slash');
+			}
+		});
+		var x = $("#eye2");
+		x.on('click',function(){
+			if(x.hasClass('far fa-eye-slash')){
+				x
+				.removeClass('far fa-eye-slash')
+				.addClass('far fa-eye');
+			}else{
+				x
+				.removeClass('far fa-eye')
+				.addClass('far fa-eye-slash');
+			}
+		});
+		m.on('click',function(){
+			(pwd.type=='password') ? pwd.type='text' : pwd.type='password';
+		});
+		x.on('click',function(){
+		(pwd2.type=='password') ? pwd2.type='text' : pwd2.type='password';
+		});
+	</script>
+</body>
+</html>
